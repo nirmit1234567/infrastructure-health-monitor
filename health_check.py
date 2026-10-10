@@ -13,7 +13,7 @@ logging.basicConfig(
 checks = {
     "CPU": psutil.cpu_percent(interval=1),
     "Memory": psutil.virtual_memory().percent,
-    "Disk": psutil.disk_usage("C:\\").percent
+    "Disk": psutil.disk_usage("/").percent
 }
 
 print("\n=== System Health Report ===")
